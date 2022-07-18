@@ -2,6 +2,7 @@
     font-family: "Alegreya Sans SC";
     src: url("../font/AlegreyaSansSC-Light.ttf");
 }
+
 @font-face {
     font-family: "Alegreya Sans SC Bold";
     src: url("../font/AlegreyaSansSC-Bold.ttf");
@@ -16,82 +17,98 @@ body {
     height: 100%;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-p{
+
+p {
     margin: 0;
 }
-a{
+
+a {
     text-decoration: none;
+    color: inherit;
 }
+
 a:visited {
     color: inherit;
 }
-ul{
-    padding: 0 ;
+
+ul {
+    padding: 0;
 }
-li{
+
+li {
     list-style-type: none;
     padding-bottom: 8px;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-.text__bold{
+
+.text__bold {
     font-family: "Alegreya Sans SC Bold";
 }
-.font-thin{
+
+.font-thin {
     font-weight: 100;
 }
 
-.title-h1{
-    font-size:24px
+.title-h1 {
+    font-size: 24px
 }
-.title-h2{
-    font-size:16px
+
+.title-h2 {
+    font-size: 16px
 }
 
 
-.d-flex{
+.d-flex {
     display: flex;
 }
-.flex__item{
+
+.flex__item {
     width: 100%;
 }
-.flow__column{
+
+.flow__column {
     flex-flow: column;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
-.justify-space-between{
+
+.justify-space-between {
     justify-content: space-between;
 }
-.align-center{
+
+.align-center {
     align-items: center;
 }
 
-.px-1{
+.px-1 {
     padding-left: 8px;
     padding-right: 8px;
 }
-.py-1{
+
+.py-1 {
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
 
-.container{
+.container {
     max-width: 890px;
     /* height: 100%; */
     background: #FFF;
     margin: 0 auto;
 }
 
-.header{
+.header {
     padding: 12px;
     position: relative;
 }
-.header__background__image{
+
+.header__background__image {
     height: 100%;
     width: 100%;
     background-image: url("../images/flower2_background.jpg");
@@ -103,7 +120,7 @@ li{
     z-index: 0;
 }
 
-.header__background__opacity{
+.header__background__opacity {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -112,7 +129,8 @@ li{
     left: 0;
     z-index: 0;
 }
-.header__background__content{
+
+.header__background__content {
     z-index: 1;
     position: relative;
     border: solid 0.5px rgb(156, 156, 156);
@@ -120,20 +138,20 @@ li{
     height: 160px;
 }
 
-.header__background__content .title{
+.header__background__content .title {
     color: #FFF;
     font-size: 24px;
 }
 
-.profile{
+.profile {
     padding: 12px;
     position: relative;
 }
 
-.profile::after{
+.profile::after {
     content: "";
     width: calc(100% - 24px);
-    height:1px;
-  background-color: #c3c3c3;
+    height: 1px;
+    background-color: #c3c3c3;
     position: absolute;
 }
